@@ -17,7 +17,7 @@ const reducer: Reducer<TodosState> = (state = initialState, action) => {
     case TodoActionTypes.FETCH_SUCCESS:
       return {...state, loading: false, todos: action.payload}
     default:
-      break;
+      return state
   }
 }
 

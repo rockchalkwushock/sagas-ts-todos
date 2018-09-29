@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 import { all, fork } from 'redux-saga/effects'
 
-import { TodosState } from './todos/types'
 import { todosReducer } from './todos/reducer'
 import { todosSaga } from './todos/sagas'
+import { TodosState } from './todos/types'
 
 export interface ApplicationState {
   todos: TodosState
